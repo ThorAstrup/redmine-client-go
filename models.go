@@ -1,6 +1,7 @@
 package redmineclientgo
 
-type ProjectItem struct {
+type Project struct {
+	ID          int    `json:"id,omitempty"`
 	Name        string `json:"name"`
-	Description string `json:"description"`
+	Description string `json:"description,omitempty"`
 }
